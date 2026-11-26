@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey) {
+                e.preventDefault();
+            }
+        });
+    </script>
+    <title>PDF-20043612647135525</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css" integrity="sha512-NZ19NrT58XPK5sXqXnnvtf9T5kLXSzGQlVZL9taZWeTBtXoN3xIfTdxbkQh6QSoJfJgpojRqMfhyqBAAEeiXcA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/card.css">
+    <link rel="stylesheet" href="assets/css/bn-font.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=REM:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=REM:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        @page {
+            margin: 0;
+            size: A4;
+        }
+        @media print {
+            body {
+                overflow: hidden;
+            }
+            .a4_page {
+                height: 297mm;
+                width: 210mm;
+                overflow: hidden;
+                position: relative;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a4_page" id="a4_page">
+        <div class="main_wrapper">
+            <img src="assets/images/ri_1.png" class="main_logo" alt="">
+            <span style="z-index: 10;">
+                <div class="mr_header">
+                    <div class="left_part_hidden"></div>
+                    <div class="left_part">
+                        <img style="height:110px; width:110px;" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://bdris.gov.bd/certificate/verify?key=m5efR1pIXHzNF7p/Jpv9yg+m/QcSP6ATHgKZU5eum/oJSbBisj0GKCwswKf+" alt="">
+                        <h2>CXED</h2>
+                    </div>
+                    <div class="middle_part">
+                        <img src="assets/images/bd_logo.png" alt="" class="main_logo_r">
+                        <img src="assets/images/bd_logo.png" alt="" style="opacity: 0;">
+                        <h2>Government of the People’s Republic of Bangladesh</h2>
+                        <p class="office">Office of the Registrar, Birth and Death Registration</p>
+                        <p class="address1">Mirashi</p>
+                        <p class="address2">Habiganj</p>
+                        <p class="rule_y">(Rule 9, 10)</p>
+                        <h1><span class="bn">জন্ম নিবন্ধন সনদ /</span> <span class="en" style="font-family: 'Roboto Slab', serif;">Birth Registration Certificate</span></h1>
+                    </div>
+                    <div class="right_part_hidden"></div>
+                    <div class="right_part">
+                        <canvas style="height: 26px; width:220px;" id="barcode"></canvas>
+                    </div>
+                </div>
+
+                <div class="mr_body">
+                    <div class="top_part1">
+                        <div class="left">
+                            <p>Date of Registration</p>
+                            <p>12/11/2026</p>
+                        </div>
+                        <div class="middle">
+                            <h2>Birth Registration Number</h2>
+                            <h1 style="font-weight:500 !important;"> 20043612647135525</h1>
+                        </div>
+                        <div class="right">
+                            <p>Date of Issuance</p>
+                            <p>12/11/2026</p>
+                        </div>
+                    </div>
+
+                    <div class="middle">
+                        <div style="margin-top: 2px;margin-bottom: 5px;" class="new_td_2">
+                            <div class="left">
+                                <div class="part1">
+                                    <p class="bn">Date of Birth<span style="margin-left: 39px;" class="clone">:</span></p>
+                                </div>
+                                <div class="part2">
+                                    <p><span class="bn">05/11/2004</span></p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="part1">
+                                    <p><span style="margin-left: 95px;" class="clone">Sex :</span></p>
+                                </div>
+                                <div class="part2">
+                                    <p><span>Male</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 5px;margin-bottom: 24px !important;" class="td">
+                            <div class="left">
+                                <div style="width: 126px;" class="part1">
+                                    <p>In Word<span >:</span></p>
+                                </div>
+                                <div class="part2" style="width: 400px;">
+                                    <p><span style="margin-left:5px">Fiveth Of November Two Thousand Four</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 7px;" class="new_td">
+                            <div class="left">
+                                <div class="part1">
+                                    <p class="bn">নাম<span style="margin-left: 100px;" class="clone">:</span></p>
+                                </div>
+                                <div class="part2" id="name_data_bn">
+                                    <p><span class="bn">নাদিম আহমেদ</span></p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="part1">
+                                    <p style="font-weight:500">Name<span style="margin-left: 95px;" class="clone">:</span></p>
+                                </div>
+                                <div class="part2">
+                                    <p><span style="font-weight:500">Nadim Ahmed</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="mother_content" style="margin-top: 17px;" class="new_td">
+                            <div class="left">
+                                <div class="part1">
+                                    <p class="bn">মাতা<span style="margin-left: 94px;" class="clone">:</span></p>
+                                </div>
+                                <div class="part2" id="motherName_data_bn">
+                                    <p><span class="bn">মনোয়ারা খাতুন</span></p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="part1">
+                                    <p style="font-weight:500">Mother<span style="margin-left: 87px;" class="clone">:</span></p>
+                                </div>
+                                <div class="part2">
+                                    <p><span style="font-weight:500">Monuara Khatun</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="motherNanality_content" style="margin-top: 17px;" class="new_td">
+                            <div class="left">
+                                <div class="part1">
+                                    <p class="bn">মাতার জাতীয়তা<span style="margin-left: 26px;" class="clone">:</span></p>
+                                </div>
+                                <div class="part2">
+                                    <p><span class="bn">বাংলাদেশী</span></p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="part1">
+                                    <p style="font-weight:500">Nationality<span style="margin-left: 64px;" class="clone">:</span></p>
+                                </div>
+                                <div class="part2">
+                                    <p><span style="font-weight:500">Bangladeshi</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 16px;" class="new_td">
+                            <div class="left">
+                                <div class="part1">
+                                    <p class="bn">পিতা<span style="margin-left: 94px;" class="clone">:</span></p>
+                                </div>
+                                <div class="part2" id="fatherName_data_bn">
+                                    <p><span class="bn">মোঃ ফরিদ মিয়া</span></p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="part1">
+                                    <p style="font-weight:500">Father<span style="margin-left: 91px;" class="clone">:</span></p>
+                                </div>
+                                <div class="part2">
+                                    <p><span style="font-weight:500">Md Farid Miah</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="fatherNanality_content" style="margin-top: 17px;" class="new_td">
+                            <div class="left">
+                                <div class="part1">
+                                    <p class="bn">পিতার জাতীয়তা<span style="margin-left: 26px;" class="clone">:</span></p>
+                                </div>
+                                <div class="part2">
+                                    <p><span class="bn">বাংলাদেশী</span></p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="part1">
+                                    <p style="font-weight:500">Nationality<span style="margin-left: 65px;" class="clone">:</span></p>
+                                </div>
+                                <div class="part2">
+                                    <p><span style="font-weight:500">Bangladeshi</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 17px;" class="new_td">
+                            <div class="left">
+                                <div class="part1">
+                                    <p class="bn">জন্মস্থান<span style="margin-left: 78px;" class="clone">:</span></p>
+                                </div>
+                                <div class="part2">
+                                    <p><span class="bn">হবিগঞ্জ, বাংলাদেশ</span></p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="part1">
+                                    <p style="width: 153px; font-weight:500">Place of Birth<span style="margin-left: 46px;margin-right: 0;" class="clone">:</span></p>
+                                </div>
+                                <div class="part2">
+                                    <p><span style="font-weight:500">Habiganj, Bangladesh</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 30px;" class="new_td">
+                            <div class="left">
+                                <div class="part1">
+                                    <p style="width: 146px;" class="bn">স্থায়ী ঠিকানা<span style="margin-left:53px;margin-right: 0;" class="clone">:</span></p>
+                                </div>
+                                <div class="part2">
+                                    <p><span class="bn"> পশ্চিম পীরেরগাঁও, আইতন, চুনারুঘাট, হবিগঞ্জ</span></p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="part1">
+                                    <p style="display:flex; width:154px; font-weight:500">Permanent<br>Address<span style="margin-left: 64px;" class="clone">:</span></p>
+                                </div>
+                                <div class="part2">
+                                    <p><span style="font-weight:500">West Pirergaon, Aiton, Chunarughat, Habiganj</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+
+            <div class="mr_footer">
+                <div class="top">
+                <div class="left">
+                        <h2 style="width:10rem; margin-top: 0px;">Seal & Signature</h2>
+                        <p style="margin-top: 0px;">Assistant to Registrar</p>
+                        <p style="margin-top: 0px;">(Preparation, Verification)</p>
+                    </div>
+                    <div class="right">
+                      <h2 style="width:10rem" >Seal & Signature<h2>
+                        <p>Registrar</p>
+                    </div>
+                </div>
+                <div style="margin-top:8rem"class="bottom">
+                    <p>This certificate is generated from bdris.gov.bd, and to verify this certificate, please scan the above QR Code & Bar Code.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+    <script>
+        let dob_n = "20043612647135525";
+        JsBarcode("#barcode", dob_n, {
+            format: "CODE128",
+            displayValue: false,
+        });
+    </script>
+    <script>
+    function generatePDF() {
+        window.print();
+    }
+
+    $(document).ready(function() {
+        var elementWidth = $('#name_data_bn').height();
+        if(Number(Math.floor(elementWidth)) > 23){
+            $('#mother_content').css("margin-top", "17px");
+        }
+
+        var elementWidth = $('#motherName_data_bn').height();
+        if(Number(Math.floor(elementWidth)) > 23){
+            $('#motherNanality_content').css("margin-top", "17px");
+        }
+
+        var elementWidth = $('#fatherName_data_bn').height();
+        if(Number(Math.floor(elementWidth)) > 23){
+            $('#fatherNanality_content').css("margin-top", "17px");
+        }
+    });
+
+    window.onload = function () {
+        window.print();
+    };
+    </script>
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"d9f3d84e086c4698a45dcbd556d51543","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
